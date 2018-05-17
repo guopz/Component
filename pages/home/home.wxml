@@ -18,8 +18,8 @@
     <view>ClickME check console</view>
   </test>
 
-  <view>组件1</view>
+  <view>layer 组件1</view>
   <button class="primary" catchtap="showDialog">ClickMe1</button>
-  <view>组件2</view>
+  <view>layer 组件2</view>
   <button class="primary" catchtap="showDialog2">ClickMe2</button>
 </view>
