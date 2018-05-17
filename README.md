@@ -1,24 +1,22 @@
 #### Component
-https://www.jianshu.com/p/c90138314ec8
-https://www.cnblogs.com/yf-html/p/8921543.html
 
 ##### 基本属性、方法
 https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/component.html
 1. 数据设置
-> properties: {type: String, value:'初始值',observer (n,o){console.log("数据变化出发，旧值，新值")}}  
+> properties: {type: String, value:'初始值',observer (n,o){console.log("数据变化出发，旧值，新值")}}  <br/>
 > data: {}
 
 2. 常用函数
-> methods: {}  // 自定义函数
-> behaviors: []  // 设置组件内公共模块
-> relations:[]  // 组件的关系定义
+> methods: {}  // 自定义函数 <br/>
+> behaviors: []  // 设置组件内公共模块 <br/>
+> relations:[]  // 组件的关系定义 <br/>
 
 3. 组件生命周期 Function
-> created  // 在组件实例进入页面节点树时执行，注意此时不能调用 setData
-> attached   // 在组件实例进入页面节点树时执行 (`常用`)
-> ready  // 在组件布局完成后执行，此时可以获取节点信息
-> moved  // 在组件实例被移动到节点树另一个位置时执行
-> detached  //  在组件实例被从页面节点树移除时执行
+> created  // 在组件实例进入页面节点树时执行，注意此时不能调用 setData <br/>
+> attached   // 在组件实例进入页面节点树时执行 (`常用`) <br/>
+> ready  // 在组件布局完成后执行，此时可以获取节点信息 <br/>
+> moved  // 在组件实例被移动到节点树另一个位置时执行 <br/>
+> detached  //  在组件实例被从页面节点树移除时执行 <br/>
 
 
 4. 组件默认添加一个 `<slot></slot>`, 开启 multipleSlots 可以添加多个 `<slot>`
@@ -37,7 +35,7 @@ this.triggerEvent('cancelEvent',{msg: '来自component的信息'},{});
 this.dialog = this.selectComponent('#dialog');
 ```
 7. page 传递数据 组件
-> 在组件内 properties 预定义字段
+> 在组件内 properties 预定义字段。 <br/>
 > 在page页面通过data-xxx="xx"传递数据，在组件内通过this.dataset获取。
 
 
@@ -48,10 +46,10 @@ this.dialog = this.selectComponent('#dialog');
 
 ##### Dialog
 1. 创建一个组件 dialog 包含4个文件
->dialog.wxml
->dialog.wxss
->dialog.js
->dialog.json
+>dialog.wxml <br/>
+>dialog.wxss <br/>
+>dialog.js <br/>
+>dialog.json <br/>
 
 2. 在 dialog.json 文件中设置
 ```
