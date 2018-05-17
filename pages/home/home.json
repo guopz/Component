@@ -1,0 +1,7 @@
+{
+	"usingComponents": {
+		"dialog": "/components/dialog/dialog",
+		"test": "/components/test/a",
+		"layer": "/components/list-clue-layer/list-clue-layer"
+	}
+}

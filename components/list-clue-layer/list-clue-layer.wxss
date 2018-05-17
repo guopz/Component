@@ -1,0 +1,73 @@
+view {
+    box-sizing: border-box;
+}
+
+.g-clue-layer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    z-index: 100;
+}
+
+.g-clue-container {
+    position: absolute;
+    bottom: 0;
+    padding: 36rpx 40rpx 66rpx;
+    width: 100%;
+    background-color: #fff;
+}
+
+.g-clue-layer .u-ipt-new {
+    margin-top: 34rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 36rpx;
+    padding: 0 30rpx 0 0;
+    border-bottom: 2rpx solid #F4F6F7;
+}
+
+.g-clue-layer .u-error {
+    height: 68rpx;
+    line-height: 45rpx;
+    font-size: 24rpx;
+    color: #FF4848;
+}
+
+.g-clue-layer .u-btn {
+    width: 80%;
+    height: 84rpx;
+    line-height: 84rpx;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #F88E0E;
+    color: #fff;
+    font-size: 36rpx;
+    border-radius: 200rpx;
+}
+
+.g-clue-layer .u-clue-title {
+    position: relative;
+}
+
+.g-clue-layer .u-1 {
+    margin-bottom: 12rpx;
+    font-size: 34rpx;
+    color: #F39802;
+}
+
+.g-clue-layer .u-2 {
+    color: #B3B4BB;
+    font-size: 24rpx;
+}
+
+.g-clue-layer .u-3 {
+    position: absolute;
+    top: -20rpx;
+    right: 0;
+    font-size: 60rpx;
+    color: #90929D;
+}

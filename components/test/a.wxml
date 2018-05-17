@@ -1,0 +1,4 @@
+<view class="behaviors" catchtap="myBehaviorMethods">
+	<view>{{ myBehaviorProperty }} - {{ text }}</view>
+	<slot></slot>
+</view>

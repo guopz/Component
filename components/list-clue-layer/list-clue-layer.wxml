@@ -1,0 +1,18 @@
+<view wx:if="{{ page.layerListPhoneFlag }}">    
+    <view class="g-clue-layer" catchtouchmove="_myTapCallFalse" catchtap="_myTapCallFalse">
+        <view class="g-clue-container" catchtap="false">
+            <view class="u-clue-title">
+                <view class="u-1">咨询购车</view>
+                <view class="u-2">留下您的电话，金牌购车顾问帮你挑车、购车</view>
+                <view class="u-3" catchtap="_myTapCallPhoneClose">×</view>
+            </view>
+            <view>
+                <input confirm-type="done" class='u-ipt-new' bindinput="_myTapListPhone" maxlength="11" bindfocus="_myTapListPhoneFocus" placeholder-style="color:#D1D2D6" type="number" placeholder="请输入手机号" value="{{ page.layerListPhone }}"  />
+            </view>
+            <view class="u-error">
+                <text class="{{  page.layerListPhoneError.length > 0?'':'hidden' }}">{{ page.layerListPhoneError }}</text>
+            </view>
+            <view><button catchtap="_layerListPhoneBtn" class="u-btn" type="default" >提交</button></view>
+        </view>
+    </view>
+</view>
