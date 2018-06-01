@@ -1,0 +1,9 @@
+<view class="include">
+    <template>
+        我是通过 include 进来的
+    </template>
+    <text>我是通过 include 进来的</text>
+    
+</view>
+
+<include src="../include1/include1.wxml" />

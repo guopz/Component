@@ -1,0 +1,6 @@
+<view class="include">
+    <template>
+        我是通过 include 进来的
+    </template>
+    <text catchtap="myTap">我是通过 include1 进来的</text>
+</view>

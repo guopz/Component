@@ -1,0 +1,5 @@
+<template name="import">
+    <view class="import">
+        我是通过 import 进来的
+    </view>
+</template>

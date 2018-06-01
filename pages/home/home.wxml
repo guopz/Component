@@ -1,25 +1,44 @@
+<import src="../components/import/import.wxml" />
+
 <!--index.wxml-->
 <view class="container">
   
   <!--组件1-->
   <dialog id="dialog"
-    title = "我是传过来的标题"
-    content = "恭喜你，你学会了小程序组件"
+    title = "dialog"
+    content = "Component"
     catch:cancelEvent = "_cancelEventHome"
     bind:confirmEvent = "_confirmEventHome">
   </dialog>
-
   <!--组件2-->
-  <view>组件3</view>
   <layer id="layer" catch:myComponentOpenLayer ="_myComponentOpenLayer" catch:layerListPhoneBtn="_layerListPhoneBtn"></layer>
 
-  <!--组件3-->
-  <test data-list="page -> test">
-    <view>ClickME check console</view>
-  </test>
+<view>
+<button class="primary" catchtap="ceshi1">Component</button>
+<button class="primary" catchtap="ceshi2">Import</button>
+</view>
 
+<view hidden="{{ flag }}"> 
   <view>layer 组件1</view>
   <button class="primary" catchtap="showDialog">ClickMe1</button>
   <view>layer 组件2</view>
   <button class="primary" catchtap="showDialog2">ClickMe2</button>
+  <!--组件3-->
+  <view>组件3</view>
+  <test data-list="page -> test">
+    <view>ClickME check console</view>
+  </test>
+</view>
+  
+<view hidden="{{ flag1 }}">
+  <!--组件4-->
+  <view>import 引入</view>
+  <template is="import"></template>
+
+  <!--组件5-->
+  <view>include</view>
+  <include src="../components/include/include.wxml" />
+</view>
+
+   
 </view>
