@@ -1,14 +1,14 @@
 #### Component
 
 ##### import
-> .wxml
-> .wxss
+> .wxml <br />
+> .wxss <br />
 
 通过相对路径进行引用 （作用域）（动态赋值）
 
 ##### include
-> .wxml
-> .wxss
+> .wxml <br />
+> .wxss <br />
 
 通过相对路径进行引用（复制）
 
@@ -27,16 +27,16 @@ https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/comp
 ```
 
 2. 常用函数
-> methods: {}  // 自定义函数
-> behaviors: []  // 设置组件内公共模块
-> relations:[]  // 组件的关系定义
+> methods: {}  // 自定义函数 <br />
+> behaviors: []  // 设置组件内公共模块 <br />
+> relations:[]  // 组件的关系定义 <br />
 
 3. 组件生命周期 Function
-> created  // 在组件实例进入页面节点树时执行，注意此时不能调用 setData
-> attached   // 在组件实例进入页面节点树时执行 (`常用`)
-> ready  // 在组件布局完成后执行，此时可以获取节点信息
-> moved  // 在组件实例被移动到节点树另一个位置时执行
-> detached  //  在组件实例被从页面节点树移除时执行
+> created  // 在组件实例进入页面节点树时执行，注意此时不能调用 setData <br />
+> attached   // 在组件实例进入页面节点树时执行 (`常用`) <br />
+> ready  // 在组件布局完成后执行，此时可以获取节点信息 <br />
+> moved  // 在组件实例被移动到节点树另一个位置时执行 <br />
+> detached  //  在组件实例被从页面节点树移除时执行 <br />
 
 
 4. 组件默认添加一个 `<slot></slot>`, 开启 multipleSlots 可以添加多个 `<slot>`
@@ -60,16 +60,16 @@ this.dialog = this.selectComponent('#dialog');
 
 
 注意
-> 1. 组件内的样式独立存在
+> 1. 组件内的样式独立存在 
 > 2. 组件文件夹名称可以与文件名称不用
 > 3. Component 构造器构造的组件也可以作为页面使用。
 
 ##### Dialog
 1. 创建一个组件 dialog 包含4个文件
->dialog.wxml
->dialog.wxss
->dialog.js
->dialog.json
+>dialog.wxml <br />
+>dialog.wxss <br />
+>dialog.js <br />
+>dialog.json <br />
 
 2. 在 dialog.json 文件中设置
 ```
